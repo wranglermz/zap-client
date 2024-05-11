@@ -196,6 +196,10 @@ struct Ragebot
 			return;
 		}
 
+		uintptr_t WeaponEntity = 0;
+		int fake = 94; //temp flatline only
+		if (Features::Aimbot::Nospread && fake != 5 && fake != 17) Memory::Write<float>(WeaponEntity + OFF_PROJECTILESPEED, 0.f);
+		
 		if (Features::Ragebot::RageAimbot) {
 
 			if (Myself->IsZooming)
