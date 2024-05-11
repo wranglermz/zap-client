@@ -134,6 +134,7 @@ namespace Features {
 
     namespace Aimbot {      
         bool AimbotEnabled = false;
+	bool Nospread = true;
         int BindMethod = 0;
         int AimbotMode = 0; // Cubic Beizer (xap-client) or Grinder (Possibly linear?) or [New] Cubic Beizer (Testing)
         int InputMethod = 0; // MoveMouse or Controller (Write To ViewAngles)
